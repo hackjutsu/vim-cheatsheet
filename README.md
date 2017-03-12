@@ -68,6 +68,30 @@ u        # undo
 Ctrl + r # redo
 ```
 
+## Marking text (visual mode)
+```bash
+v        # start visual mode, mark lines, then do a command (like y-yank)
+V        # start linewise visual mode
+o        # move to other end of marked area
+O        # move to other corner of block
+aw       # mark a word
+ab       # a block with ()
+aB       # a block with {}
+ib       # inner block with ()
+iB       # inner block with {}
+Esc      # exit visual mode
+Ctrl + v # start visual block mode
+```
+
+## Visual commands
+```bash
+>       # shift text right
+<       # shift text left
+y       # yank (copy) marked text
+d       # delete marked text
+~       # switch case
+```
+
 ## Cut and paste
 ```bash
 yy       # yank (copy) a line
@@ -94,4 +118,12 @@ N              # repeat search in opposite direction
 :%s/old/new/g  # replace all old with new throughout file
 :%s/old/new/gc # replace all old with new throughout file with confirmations
 :noh           # remove highlighting of search matches
+```
+
+## Search in multiple files
+```bash
+:vimgrep /pattern/ {file} # search for pattern in multiple files
+:cn                       # jump to the next match
+:cp                       # jump to the previous match
+:copen                    # open a window containing the list of matches
 ```
