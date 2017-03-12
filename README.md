@@ -43,12 +43,43 @@ Ctrl + u # move back 1/2 a screen
 
 ## Insert mode - inserting/appending text
 ```bash
-i   # insert before the cursor
-I   # insert at the beginning of the line
-a   # insert (append) after the cursor
-A   # insert (append) at the end of the line
-o   # append (open) a new line below the current line
-O   # append (open) a new line above the current line
-ea  # insert (append) at the end of the word
-Esc # exit insert mode
+i        # insert before the cursor
+I        # insert at the beginning of the line
+a        # insert (append) after the cursor
+A        # insert (append) at the end of the line
+o        # append (open) a new line below the current line
+O        # append (open) a new line above the current line
+ea       # insert (append) at the end of the word
+Esc      # exit insert mode
+```
+
+## Editing
+```bash
+r        # replace a single character
+J        # join line below to the current one
+cc       # change (replace) entire line
+cw       # change (replace) to the end of the word
+c$       # change (replace) to the end of the line
+s        # delete character and substitute text
+S        # delete line and substitute text (same as cc)
+xp       # transpose two letters (delete and paste)
+.        # repeat last command
+u        # undo
+Ctrl + r # redo
+```
+
+## Cut and paste
+```bash
+yy       # yank (copy) a line
+2yy      # yank (copy) 2 lines
+yw       # yank (copy) the characters of the word from the cursor position to the start of the next word
+y$       # yank (copy) to end of line
+p        # put (paste) the clipboard after cursor
+P        # put (paste) before cursor
+dd       # delete (cut) a line
+2dd      # delete (cut) 2 lines
+dw       # delete (cut) the characters of the word from the cursor position to the start of the next word
+D        # delete (cut) to the end of the line
+d$       # delete (cut) to the end of the line
+x        # delete (cut) character
 ```
