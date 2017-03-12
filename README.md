@@ -1,4 +1,6 @@
-# vim-cheatsheet
+# Vim Cheatsheet
+
+>Disclaimer: This cheatsheet is summerized from my own experience and other publich information. It should not be considered official advice.
 
 ## Global
 ```bash
@@ -138,7 +140,7 @@ N              # repeat search in opposite direction
 ```
 
 ## Working with multiple files
-``bash
+```bash
 :e file       # edit a file in a new buffer
 :bnext or :bn # go to the next buffer
 :bprev or :bp # go to the previous buffer
