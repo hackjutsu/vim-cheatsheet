@@ -127,3 +127,25 @@ N              # repeat search in opposite direction
 :cp                       # jump to the previous match
 :copen                    # open a window containing the list of matches
 ```
+
+## Exiting
+```bash
+:w              # write (save) the file, but don't exit
+:w !sudo tee %  # write out the current file using sudo
+:wq or :x or ZZ # write (save) and quit
+:q              # quit (fails if there are unsaved changes)
+:q! or ZQ       # quit and throw away unsaved changes
+```
+
+## Tabs
+```bash
+:tabnew or :tabnew file # open a file in a new tab
+Ctrl + wT               # move the current split window into its own tab
+gt or :tabnext or :tabn # move to the next tab
+gT or :tabprev or :tabp # move to the previous tab
+<number>gt              # move to tab <number>
+:tabmove <number>       # move current tab to the <number>th position (indexed from 0)
+:tabclose or :tabc      # close the current tab and all its windows
+:tabonly or :tabo       # close all tabs except for the current one
+:tabdo command          # run the command on all tabs (e.g. :tabdo q - closes all opened tabs)
+```
