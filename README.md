@@ -60,7 +60,9 @@ Esc      # exit insert mode
 r        # replace a single character
 J        # join line below to the current one
 cc       # change (replace) entire line
-cw       # change (replace) to the end of the word
+cw       # change (replace) to the start of the next word
+ce       # change (replace) to the end of the next word
+cb       # change (replace) to the start of the previous word
 c$       # change (replace) to the end of the line
 s        # delete character and substitute text
 S        # delete line and substitute text (same as cc)
@@ -107,6 +109,8 @@ dd       # delete (cut) a line
 dw       # delete (cut) the characters of the word from the cursor position to the start of the next word
 D        # delete (cut) to the end of the line
 d$       # delete (cut) to the end of the line
+d^       # delete (cut) to the first non-blank character of the line
+d0       # delete (cut) to the begining of the line
 x        # delete (cut) character
 ```
 
