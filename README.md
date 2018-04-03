@@ -1,6 +1,6 @@
 # Vim Cheatsheet
 
->Disclaimer: This cheatsheet is summerized from my own experience and other publich information. It should not be considered official advice.
+>Disclaimer: This cheatsheet is summarized from personal experience and other online tutorials. It should not be considered as an official advice.
 
 ## Global
 ```bash
