@@ -63,6 +63,7 @@ cc       # change (replace) entire line
 cw       # change (replace) to the start of the next word
 ce       # change (replace) to the end of the next word
 cb       # change (replace) to the start of the previous word
+c0       # change (replace) to the end of the line
 c$       # change (replace) to the end of the line
 s        # delete character and substitute text
 S        # delete line and substitute text (same as cc)
